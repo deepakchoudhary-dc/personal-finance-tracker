@@ -1,6 +1,7 @@
 # 💰 Personal Finance & Inflation Impact Tracker
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](http://localhost:8503)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit%20Cloud-FF4B4B.svg)](https://share.streamlit.io)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -27,7 +28,8 @@ A comprehensive real-time financial intelligence platform that analyzes how infl
 - **🔒 Security**: Environment-based API key management, secure data handling
 
 ## 🎯 Live Demo Features
-- **📈 Real-time Inflation Dashboard**: http://localhost:8503
+- **🌐 Live Demo**: [Deploy on Streamlit Cloud](https://share.streamlit.io) (See STREAMLIT_DEPLOYMENT.md)
+- **📈 Real-time Inflation Dashboard**: Live API-powered economic data
 - **🔄 Auto-refreshing Data**: Updates every hour with latest economic indicators
 - **🌍 Global Coverage**: 190+ countries with live economic data
 - **📱 Responsive Design**: Works on desktop, tablet, and mobile devices
