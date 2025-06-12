@@ -39,8 +39,7 @@ def main():
     - **Personal Finance**: Budget tracking tools
     - **Economic Indicators**: Market insights
     """)
-    
-    st.sidebar.markdown("---")
+      st.sidebar.markdown("---")
     st.sidebar.markdown("""
     ### 📈 Data Sources
     - World Bank API
@@ -48,6 +47,34 @@ def main():
     - ExchangeRate-API
     - Custom Financial Models
     """)
+    
+    # API Key Status in Sidebar
+    st.sidebar.markdown("---")
+    st.sidebar.markdown("### 🔑 API Status")
+    
+    # Quick API key check
+    import os
+    fred_key = st.secrets.get("FRED_API_KEY", os.getenv("FRED_API_KEY", "")) if hasattr(st, 'secrets') else ""
+    exchange_key = st.secrets.get("EXCHANGE_RATE_API_KEY", os.getenv("EXCHANGE_RATE_API_KEY", "")) if hasattr(st, 'secrets') else ""
+    
+    if fred_key and fred_key != "your_fred_key_here":
+        st.sidebar.success("🏦 FRED: ✅")
+    else:
+        st.sidebar.warning("🏦 FRED: ⚠️")
+        
+    if exchange_key and exchange_key != "your_exchange_rate_key_here":
+        st.sidebar.success("💱 Exchange: ✅")
+    else:
+        st.sidebar.warning("💱 Exchange: ⚠️")
+        
+    if st.sidebar.button("🔧 Setup API Keys"):
+        st.info("📖 See API_KEYS_SETUP.md for detailed instructions!")
+        st.markdown("""
+        ### 🚀 Quick Setup:
+        1. **FRED API**: [Get free key](https://fred.stlouisfed.org/docs/api/api_key.html)
+        2. **Exchange Rate API**: [Get free key](https://exchangerate-api.com/)
+        3. **Add to Streamlit**: Settings → Secrets → Add keys
+        """)
       # Load selected dashboard
     if app_mode == "Real-time API Dashboard":
         try:

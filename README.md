@@ -96,6 +96,29 @@ cp .env.realtime .env
 ### 🎯 No Setup Required
 The dashboard works immediately with **free public APIs** - no API keys needed for basic functionality!
 
+## 🔑 Enhanced Features (Optional API Keys)
+
+Want **real-time data**? Get these free API keys in 2 minutes:
+
+### 🏦 FRED API (Economic Data) - **FREE**
+1. Go to: [FRED API Key](https://fred.stlouisfed.org/docs/api/api_key.html)
+2. Get instant approval ⚡
+3. Add to Streamlit Cloud: Settings → Secrets
+
+### 💱 Exchange Rate API - **FREE**  
+1. Go to: [ExchangeRate-API](https://exchangerate-api.com/)
+2. 1,500 free requests/month 🎉
+3. Add to Streamlit Cloud: Settings → Secrets
+
+### 📋 Secrets Configuration
+```toml
+# In Streamlit Cloud: Settings → Secrets
+FRED_API_KEY = "your_fred_key_here"
+EXCHANGE_RATE_API_KEY = "your_exchange_rate_key_here"
+```
+
+**📖 Detailed Setup**: See `API_KEYS_SETUP.md` for step-by-step instructions!
+
 ## 📊 Dashboard Features
 
 ### 🌐 Real-time Tabs
