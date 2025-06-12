@@ -1,0 +1,2 @@
+# This file ensures the data/external directory is tracked by git
+# External data files are ignored but we want to preserve the directory structure
